@@ -29,9 +29,13 @@ let dividir = {
 }
 
 //Tu funcion de suma aqui abajo
-
-
+function suma (a,b) {
+    return a + b;
+}
 //Tu funcion de resta aqui abajo
+function resta (a,b) {
+    return a -b; 
+}
 
 
 //Tu funcion de  multiplicar aqui abajo
@@ -49,11 +53,14 @@ function funDiv(x, y) {
 window.onload = function () {
     console.log("Me ejecute al cargar la pagina");
     //Ejecuta tu funcion "calculate" dentro de este bloque de codigo
-    console.log(calculate(funDiv,dividir));
-
+    this.console.log(calculate(resta, restar))
 }
 
-function calculate(func, obj) {
-   let resul= func(obj.a,obj.b);
-   return (resul);
+function calculate(func, obj){
+    //Tu logica va aqui 
+    let resul  = func(obj.a,obj.b);
+    return resul;
+
+
+
 }
