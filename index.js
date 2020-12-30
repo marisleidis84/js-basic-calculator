@@ -35,18 +35,25 @@ let dividir = {
 
 
 //Tu funcion de  multiplicar aqui abajo
+function funMul(a, b) {
+    return (a * b);
+}
 
 
 //Tu funcion de dividir aqui abajo
+function funDiv(x, y) {
+    return (x * y);
 
-
-
+}
 //Funcion calculate
-window.onload = function(){
-    console.log("Me ejecute al cargar la pagina")
+window.onload = function () {
+    console.log("Me ejecute al cargar la pagina");
     //Ejecuta tu funcion "calculate" dentro de este bloque de codigo
+    console.log(calculate(funDiv,dividir));
+
 }
 
-function calculate(func, obj){
-    //Tu logica va aqui 
+function calculate(func, obj) {
+   let resul= func(obj.a,obj.b);
+   return (resul);
 }
