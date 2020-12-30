@@ -39,16 +39,21 @@ function resta (a,b) {
 
 
 //Tu funcion de  multiplicar aqui abajo
+function funMul(a, b) {
+    return (a * b);
+}
 
 
 //Tu funcion de dividir aqui abajo
+function funDiv(x, y) {
+    return (x * y);
 
-
-
+}
 //Funcion calculate
-window.onload = function(){
-    console.log("Me ejecute al cargar la pagina")
+window.onload = function () {
+    console.log("Me ejecute al cargar la pagina");
     //Ejecuta tu funcion "calculate" dentro de este bloque de codigo
+<<<<<<< HEAD
     this.console.log(calculate(resta, restar))
 }
 
@@ -59,4 +64,13 @@ function calculate(func, obj){
 
 
 
+=======
+    console.log(calculate(funDiv,dividir));
+
+}
+
+function calculate(func, obj) {
+   let resul= func(obj.a,obj.b);
+   return (resul);
+>>>>>>> 87060842d62e6d00947410c52b8df45c2301b692
 }
